@@ -1,5 +1,6 @@
 package com.example.chucknorris;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,12 +35,21 @@ public class MainActivity extends AppCompatActivity {
 		service = ServiceGenerator.createService(JokesService.class);
 		
 		Button moreButton = findViewById(R.id.button_more);
+		Button githubButton = findViewById(R.id.button_github);
 		moreJoke();
 		
 		moreButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				moreJoke();
+			}
+		});
+		
+		githubButton.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), GithubActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
@@ -61,6 +71,5 @@ public class MainActivity extends AppCompatActivity {
 				Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
 			}
 		});
-		
 	}
 }
