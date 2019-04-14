@@ -3,7 +3,7 @@ Retrofit adalah kelas di mana antarmuka API Anda diubah menjadi objek yang dapat
 
 ## API yang dipakai
 1. Praktikum<br>
-**[Chuck Norris Jokes API]([https://link](https://api.chucknorris.io/#!))**
+[Chuck Norris Jokes API]([https://link](https://api.chucknorris.io/#!))
 
 2. Tugas<br>
-**[Github API]([https://link](https://developer.github.com/v3/))**
+[Github API]([https://link](https://developer.github.com/v3/))
